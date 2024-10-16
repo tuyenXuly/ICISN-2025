@@ -8,8 +8,8 @@ from template import show_sensor_matrix
 
 # Set initial parameters
 sensing_range = 10
-communication_range = 10
-num_sensor = 40
+communication_range = 20
+num_sensor = 60
 num_solutions = num_sensor
 
 matrix_length = 101 # 101 points
@@ -24,7 +24,7 @@ matrix = np.zeros((matrix_length, matrix_width))
 # Set parameters for ABC
 num_employed_bees = num_solutions
 num_onlooker_bees = num_solutions
-max_iterations = 100
+max_iterations = 1000
 limit = 50  # Reduced limit to increase exploration
 
 # Initialize population
